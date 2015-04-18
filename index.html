@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Sandwich bar</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/material-wfont.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/ripples.min.css">
+   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body style='background:#C062AB;'>
+<span style='position:fixed;z-index:9999;top:0;left:0;padding-left:10px;padding-top:10px;'><img style='max-height:35px;width:auto;' src='logo.png'></img></span>
+<div class='container-fluid' style='margin-left:2%;margin-right:2%;margin-top:5%'>
+  <div class='row'>
+    <div class='col-md-6'>
+	<a class='player' id='light' style='display:block;width:700px;height:500px;' href='https://streaming.ivideon.com/flv/live?sessionId=demo&server=100-f382f69652e57331b0312c7df35e8b9a&camera=0&q=2&vcodec=h264&vcodec=flv&type=site&_=0.8505473606171601'></a>
+	<script type="text/javascript" src="flowplayer-3.2.13.min.js"></script>
+	<script>
+	flowplayer("light", "flowplayer-3.2.18.swf", {
+
+    plugins: {
+        controls: {
+            url: "flowplayer.controls-3.2.16.swf",
+
+            // customize the appearance make it have a lighter look
+            buttonColor: 'rgba(0, 0, 0, 0.9)',
+            buttonOverColor: '#000000',
+            backgroundColor: '#D7D7D7',
+            backgroundGradient: 'medium',
+            sliderColor: '#FFFFFF',
+
+            sliderBorder: '1px solid #808080',
+            volumeSliderColor: '#FFFFFF',
+            volumeBorder: '1px solid #808080',
+
+            timeColor: '#000000',
+            durationColor: '#535353'
+        }
+    },
+    clip: {
+        autoPlay: true
+    }
+
+});
+</script>
+	</div>
+	<div class='col-md-6'>
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'sandwitchbar';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+   </div>
+  </div>
+</div>
+</body>
+</html>

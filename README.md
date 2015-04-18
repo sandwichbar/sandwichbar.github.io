@@ -1,2 +1,2 @@
-# sandwichbar.github.io
-lol
+# sandwitchbar.github.io
+sup /b/
